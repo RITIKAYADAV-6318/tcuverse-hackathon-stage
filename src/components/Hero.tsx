@@ -2,38 +2,40 @@ import { useEffect, useState } from 'react';
 import { Button } from './ui/button';
 
 export default function Hero() {
+  const targetDate = new Date("2025-11-23T00:00:00"); // 🎯 countdown target
   const [countdown, setCountdown] = useState({
-    days: 31,
-    hours: 10,
-    minutes: 31,
-    seconds: 24,
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCountdown((prev) => {
-        let { days, hours, minutes, seconds } = prev;
-        
-        if (seconds > 0) {
-          seconds--;
-        } else {
-          seconds = 59;
-          if (minutes > 0) {
-            minutes--;
-          } else {
-            minutes = 59;
-            if (hours > 0) {
-              hours--;
-            } else {
-              hours = 23;
-              if (days > 0) {
-                days--;
-              }
-            }
-          }
-        }
-        
-        return { days, hours, minutes, seconds };
+      const now = new Date().getTime();
+      const distance = targetDate.getTime() - now;
+
+      if (distance <= 0) {
+        clearInterval(interval);
+        setCountdown({
+          days: "00",
+          hours: "00",
+          minutes: "00",
+          seconds: "00",
+        });
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      setCountdown({
+        days: days.toString().padStart(2, "0"),
+        hours: hours.toString().padStart(2, "0"),
+        minutes: minutes.toString().padStart(2, "0"),
+        seconds: seconds.toString().padStart(2, "0"),
       });
     }, 1000);
 
@@ -65,22 +67,24 @@ export default function Hero() {
             <div className="w-12 h-12 border-2 border-secondary rounded-full" />
           </div>
           <div className="text-left">
-            <div className="text-lg">THIS OCTOBER 31ST</div>
+            <div className="text-lg">THIS 23 November</div>
             <div className="text-lg">BE READY!</div>
           </div>
         </div>
 
         {/* Countdown Timer */}
-        <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
-          {Object.entries(countdown).map(([key, value]) => (
-            <div key={key} className="border border-primary p-4 bg-card/50">
-              <div className="text-3xl md:text-5xl font-bold text-primary mb-2">
-                {value.toString().padStart(2, '0')}
-              </div>
-              <div className="text-xs font-mono text-muted-foreground uppercase">{key}</div>
-            </div>
-          ))}
+       <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
+      {Object.entries(countdown).map(([key, value]) => (
+        <div key={key} className="border border-primary p-4 bg-card/50">
+          <div className="text-3xl md:text-5xl font-bold text-primary mb-2">
+            {value}
+          </div>
+          <div className="text-xs font-mono text-muted-foreground uppercase">
+            {key}
+          </div>
         </div>
+      ))}
+    </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -103,7 +107,7 @@ export default function Hero() {
         <div className="mt-12 border-2 border-primary bg-primary/10 p-6 max-w-3xl mx-auto backdrop-blur-sm">
           <div className="text-xs font-mono text-accent mb-4">FOLLOW US</div>
           <div className="flex justify-center space-x-6">
-            {['Facebook', 'Instagram', 'LinkedIn', 'Twitter', 'Discord'].map((social) => (
+            {['Instagram', 'LinkedIn', 'Whatsapp'].map((social) => (
               <a
                 key={social}
                 href="#"
