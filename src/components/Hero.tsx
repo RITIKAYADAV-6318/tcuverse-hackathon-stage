@@ -53,11 +53,13 @@ export default function Hero() {
         </div>
 
         <h1 className="text-4xl md:text-7xl font-bold mb-4">
-          <div className="text-secondary text-xl md:text-2xl mb-2">INNOVATE TO INSPIRE</div>
-          <div className="glitch text-glow">
-            TCU<span className="text-secondary">VERSE</span>
+          <div className="flex flex-col items-center">
+            <img 
+              src="/TCU%20logo.png" 
+              alt="TCUVERSE 2025 - INNOVATE TO INSPIRE"
+              className="min-w-full h-auto"
+            />
           </div>
-          <div className="text-5xl md:text-8xl mt-2 text-glow-cyan">2025</div>
         </h1>
 
         <div className="flex items-center justify-center space-x-2 text-accent text-xs font-mono mb-6">
