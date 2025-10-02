@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { Briefcase } from "lucide-react"
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -138,13 +140,13 @@ export default function Schedule() {
   return (
     <section id="schedule" className="min-h-screen px-4 py-20  overflow-hidden">
       <div className="container mx-auto max-w-6xl">
-        <h2
-          ref={titleRef}
-          className="text-6xl md:text-8xl lg:text-9xl font-black text-center mb-20 tracking-tight text-[#FF1493]"
-        >
-          EVENT SCHEDULE
-        </h2>
-
+        <div className="mb-12 flex flex-col items-center text-center">
+          <Briefcase className="w-16 h-16 text-purple-500 mb-6" />
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-purple-500">Event Schedule</h2>
+          <p className="text-lg md:text-xl text-gray-400 font-mono">
+            Explore the timeline of our event.
+          </p>
+        </div>
         <div className="relative">
           {/* Vertical Timeline Line */}
           <div
