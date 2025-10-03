@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import Lenis from '@studio-freight/lenis';
 
 export default function Hero() {
-   const targetDate = new Date("2025-11-23T00:00:00"); // 🎯 countdown target
+  const targetDate = new Date("2025-11-23T00:00:00"); // 🎯 countdown target
   const [countdown, setCountdown] = useState({
     days: "00",
     hours: "00",
@@ -106,7 +106,7 @@ export default function Hero() {
           </div>
         </div>
 
-         {/* Countdown Timer */}
+        {/* Countdown Timer */}
        <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
       {Object.entries(countdown).map(([key, value]) => (
         <div key={key} className="border border-primary p-4 bg-card/50">
@@ -121,12 +121,15 @@ export default function Hero() {
     </div>
 
 
-          {/* Countdown Timer */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto mb-8 sm:mb-12 px-4">
-            {Object.entries(countdown).map(([key, value]) => (
-              <div 
-                key={key} 
-                className="relative group"
+        {/* Social Links */}
+        <div className="mt-12 border-2 border-primary bg-primary/10 p-6 max-w-3xl mx-auto backdrop-blur-sm">
+          <div className="text-xs font-mono text-accent mb-4">FOLLOW US</div>
+          <div className="flex justify-center space-x-6">
+            {['Instagram', 'LinkedIn', 'Whatsapp'].map((social) => (
+              <a
+                key={social}
+                href="#"
+                className="text-primary hover:text-secondary transition-colors text-sm font-mono"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg blur-md group-hover:blur-lg transition-all duration-300" />
                 <div className="relative border-2 border-primary/50 p-4 sm:p-6 md:p-8 bg-card/80 backdrop-blur-sm rounded-lg hover:border-primary transition-all duration-300 hover:scale-105">
