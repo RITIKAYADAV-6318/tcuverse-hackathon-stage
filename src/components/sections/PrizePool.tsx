@@ -182,9 +182,9 @@ export default function PrizePool() {
         {/* Title */}
         <div className="mb-12 flex flex-col items-center text-center">
                   <Briefcase className="w-16 h-16 text-purple-500 mb-6" />
-                  <h2 className="text-4xl md:text-6xl font-bold mb-6 text-purple-500">SPONSORS</h2>
+                  <h2 className="text-4xl md:text-6xl font-bold mb-6 text-purple-500">Prize Pool</h2>
                   <p className="text-lg md:text-xl text-gray-400 font-mono">
-                    Our incredible partners making TCU verse Hackathon possible.
+                    Unveiling the prizes for champions.
                   </p>
                 </div>
 

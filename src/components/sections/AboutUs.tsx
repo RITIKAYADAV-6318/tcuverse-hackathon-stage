@@ -58,7 +58,7 @@ export default function AboutUs() {
             {/* Large featured image - top left */}
             <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/hackathon-team-coding-together.jpg"
+                src="/arena.jpg"
                 alt="Hackathon team collaboration"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -68,7 +68,7 @@ export default function AboutUs() {
             {/* Top right - tall */}
             <div className="col-span-2 row-span-1 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/developers-presenting-project-on-stage.jpg"
+                src="/manipal.jpg"
                 alt="Project presentation"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -78,7 +78,7 @@ export default function AboutUs() {
             {/* Middle right - two small squares */}
             <div className="col-span-1 row-span-1 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/hackathon-winner-trophy-and-prizes.jpg"
+                src="/trop.jpg"
                 alt="Prizes and trophies"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -87,7 +87,7 @@ export default function AboutUs() {
 
             <div className="col-span-1 row-span-1 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/coding-on-laptop-with-colorful-code.jpg"
+                src="/stage.jpg"
                 alt="Coding session"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -97,7 +97,7 @@ export default function AboutUs() {
             {/* Bottom row - three images */}
             <div className="col-span-1 row-span-1 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/hackathon-participants-networking.jpg"
+                src="/Abhi.jpg"
                 alt="Networking session"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -106,7 +106,7 @@ export default function AboutUs() {
 
             <div className="col-span-2 row-span-1 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/hackathon-venue-with-participants-working.jpg"
+                src="/iit.jpg"
                 alt="Hackathon venue"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -115,7 +115,7 @@ export default function AboutUs() {
 
             <div className="col-span-1 row-span-1 relative group overflow-hidden rounded-xl border-2 border-purple-500/30 shadow-lg shadow-purple-500/20">
               <img
-                src="/team-celebrating-hackathon-success.jpg"
+                src="/lap.jpg"
                 alt="Team celebration"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

@@ -11,12 +11,12 @@ const teamMembers = [
   {
     name: "Kanak Sharma",
     designation: "Co-Founder and Tech Lead",
-    image: "/professional-male-portrait-with-black-shirt.jpg",
+    image: "/Kanak.jpg",
   },
   {
     name: "Rohit Sharma",
     designation: "Co-Founder and Graphics Lead",
-    image: "/professional-male-portrait-speaking.jpg",
+    image: "/rohit.jpg",
   },
   {
     name: "Abhishek Maurya",
@@ -26,15 +26,15 @@ const teamMembers = [
   {
     name: "Namit",
     designation: "Sponsors Team Head",
-    image: "/professional-male-portrait-at-podium.jpg",
+    image: "/Namit.jpg",
   },{
     name: "Keshav",
     designation: "PR Team Head",
-    image: "/professional-male-portrait-at-podium.jpg",
+    image: "/Keshav.jpg",
   },{
     name: "Ritika Yadav",
     designation: "Volunteer Team Head",
-    image: "/professional-male-portrait-at-podium.jpg",
+    image: "/Ritika.jpg",
   },
 ]
 

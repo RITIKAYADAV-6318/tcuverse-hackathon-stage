@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="w-12 h-12 border-2 border-secondary rounded-full" />
           </div>
           <div className="text-left">
-            <div className="text-lg">THIS OCTOBER 31ST</div>
+            <div className="text-lg">THIS DECEMBER 6th</div>
             <div className="text-lg">BE READY!</div>
           </div>
         </div>
